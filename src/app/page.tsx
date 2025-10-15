@@ -1,7 +1,10 @@
 import { Button } from "../components/ui/button";
 import ImageAccordion from "@/components/ImageAccordion";
 import ContinuousCarousel from "@/components/carousels/ContinuousCarousel";
-
+import TestimonialCarousel from "@/components/carousels/TestimonialCarousel";
+import SubdivisionCarousel from "@/components/carousels/SubdivisionsCarousel";
+import MapAdmin from "@/components/maps/map-admin";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -56,10 +59,10 @@ export default function Home() {
       {/* events section */}
       <div className="bg-[url(/images/house1.png)] bg-cover bg-no-repeat bg-center bg-fixed">
       <div className="bg-gradient-to-r from-primary/95 to-secondary/95 bg-blend-overlay">
-        <div className="w-[1140px] py-10 mx-auto justify-center flex flex-col gap-3 text-center">
-          <h4 className="text-white">Events</h4>
+        <div className="w-[1140px] py-10 mx-auto justify-center flex flex-col text-center">
+          <h4 className="text-white">EVENTS</h4>
           <h1 className="text-white">Homes. Community. Hope.</h1>
-          <div className="flex flex-row gap-3">
+          <div className="flex flex-row gap-3 mt-5">
 
             <div className="w-1/2 bg-white rounded-lg border-2 border-gray-300 text-left flex flex-row">
 
@@ -120,55 +123,47 @@ export default function Home() {
 
 
       {/* Review section */}
-      <div className="w-[1140px] py-10 mx-auto justify-center flex flex-col text-center">
+      <div className="w-[1140px] pt-10 mx-auto justify-center flex flex-col text-center">
           <h4>TESTIMONIALS</h4>
           <h2>Hear From Our Community</h2>
+          < TestimonialCarousel />
 
-          <div className="flex flex-row">
-            <div className="bg-white w-1/3 border-1 border-gray-300 shadow-md rounded-lg p-5 m-2 text-left">
-              <p>&quot;Affordable Homes of South Texas made my dream of homeownership a reality. Their team was supportive and knowledgeable throughout the entire process.&quot;</p>
-              <h4 className="pt-3">- Maria G.</h4>
-            </div>
-
-            <div className="bg-white w-1/3 border-1 border-gray-300 shadow-md rounded-lg p-5 m-2 text-left">
-              <p>&quot;Affordable Homes of South Texas made my dream of homeownership a reality. Their team was supportive and knowledgeable throughout the entire process.&quot;</p>
-              <h4 className="pt-3">- Maria G.</h4>
-            </div>
-
-            <div className="bg-white w-1/3 border-1 border-gray-300 shadow-md rounded-lg p-5 m-2 text-left">
-              <p>&quot;Affordable Homes of South Texas made my dream of homeownership a reality. Their team was supportive and knowledgeable throughout the entire process.&quot;</p>
-              <h4 className="pt-3">- Maria G.</h4>
-            </div>
-
-          </div>
 
       </div>
 
-      {/* Review section */}
-      <div className="bg-[url(/subdivisions/speedy-trails.png)] bg-cover bg-no-repeat bg-center">
-      <div className="bg-gradient-to-b from-black/60 to-black/25 bg-blend-overlay">
-        <div className="w-[1140px] h-[600px] mx-auto justify-center flex flex-col text-center">
-          <h4 className="text-white">NONPROFIT • HUD-APPROVED COUNCELING</h4>
-          <h1 className="text-white">Speedy Trails - Mission, TX</h1>
-          <p className="text-white w-2/3 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
-          <div className="flex flex-row gap-3 mx-auto mt-5">
-            <Button className="w-3xs" size="lg">Learn More</Button>
-            <Button className="w-3xs" size="lg" variant="secondary">All Subdivisions</Button>
-          </div>
-        </div>
-      </div>
-      </div>
+      {/* Subdivision section */}
+      <SubdivisionCarousel />
+
 
       {/* Contact section */}
       <div className="w-[1140px] py-10 mx-auto justify-center flex flex-col text-center">
           <h4>CONTACT US</h4>
           <h1>Reach Out To Our Administration Building</h1>
 
-          <div className="flex flex-row mt-5">
+          <div className="flex flex-row mt-5 gap-5">
 
             <div className="flex flex-col w-1/2 text-left">
-              <p>(956) 123-4567</p>
-              <p>100 E Nolana Ave Ste 130, McAllen, TX 78504 </p>
+                    <div className="flex flex-col gap-3 pb-5">
+                        <div className="flex flow-row gap-3">
+                            <Image 
+                                src="/svg/phone.svg" 
+                                alt="phone"
+                                width={20}
+                                height={20} />
+                            <p className="small-text text-left">956-687-6263</p>
+                        </div>
+
+                        <div className="flex flow-row gap-3">
+                            <Image 
+                                src="/svg/fax.svg" 
+                                alt="phone"
+                                width={20}
+                                height={20} />
+                            <p className="small-text text-left">FAX: 956-687-6263</p>
+                        </div>
+
+                    </div>
+              <MapAdmin />
             </div>
 
             <div className="flex w-1/2 border-1 border-gray-300 shadow-md rounded-lg p-5">
