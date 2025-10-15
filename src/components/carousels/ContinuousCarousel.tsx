@@ -21,7 +21,7 @@ export default function ContinuousCarousel() {
         {[...images, ...images].map((img, i) => (
           <div
             key={i}
-            className="flex-shrink-0 w-[180px] h-[100px] mx-4 relative"
+            className="flex-shrink-0 w-[180px] h-[100px] mx-10 relative"
           >
             <Image
               src={img.src}
