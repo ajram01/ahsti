@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import { Button } from "../components/ui/button";
 import ImageAccordion from "@/components/ImageAccordion";
 import ContinuousCarousel from "@/components/carousels/ContinuousCarousel";
@@ -128,17 +126,17 @@ export default function Home() {
 
           <div className="flex flex-row">
             <div className="bg-white w-1/3 border-1 border-gray-300 shadow-md rounded-lg p-5 m-2 text-left">
-              <p>"Affordable Homes of South Texas made my dream of homeownership a reality. Their team was supportive and knowledgeable throughout the entire process."</p>
+              <p>&quot;Affordable Homes of South Texas made my dream of homeownership a reality. Their team was supportive and knowledgeable throughout the entire process.&quot;</p>
               <h4 className="pt-3">- Maria G.</h4>
             </div>
 
             <div className="bg-white w-1/3 border-1 border-gray-300 shadow-md rounded-lg p-5 m-2 text-left">
-              <p>"Affordable Homes of South Texas made my dream of homeownership a reality. Their team was supportive and knowledgeable throughout the entire process."</p>
+              <p>&quot;Affordable Homes of South Texas made my dream of homeownership a reality. Their team was supportive and knowledgeable throughout the entire process.&quot;</p>
               <h4 className="pt-3">- Maria G.</h4>
             </div>
 
             <div className="bg-white w-1/3 border-1 border-gray-300 shadow-md rounded-lg p-5 m-2 text-left">
-              <p>"Affordable Homes of South Texas made my dream of homeownership a reality. Their team was supportive and knowledgeable throughout the entire process."</p>
+              <p>&quot;Affordable Homes of South Texas made my dream of homeownership a reality. Their team was supportive and knowledgeable throughout the entire process.&quot;</p>
               <h4 className="pt-3">- Maria G.</h4>
             </div>
 
