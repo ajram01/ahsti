@@ -1,6 +1,6 @@
 import { Button } from "../components/ui/button";
 import ImageAccordion from "@/components/ImageAccordion";
-import ContinuousCarousel from "@/components/carousels/ContinuousCarousel";
+import ContinuousCarousel from "@/components/carousels/SliderImages";
 import TestimonialCarousel from "@/components/carousels/TestimonialCarousel";
 import SubdivisionCarousel from "@/components/carousels/SubdivisionsCarousel";
 import MapAdmin from "@/components/maps/map-admin";
@@ -62,7 +62,7 @@ export default function Home() {
         <div className="w-[1140px] py-10 mx-auto justify-center flex flex-col text-center">
           <h4 className="text-white">EVENTS</h4>
           <h1 className="text-white">Homes. Community. Hope.</h1>
-          <div className="flex flex-row gap-3 mt-5">
+          <div className="flex flex-row gap-3 mt-5 mb-3">
 
             <div className="w-1/2 bg-white rounded-lg border-2 border-gray-300 text-left flex flex-row">
 
