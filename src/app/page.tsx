@@ -4,11 +4,13 @@ import ContinuousCarousel from "@/components/carousels/SliderImages";
 import TestimonialCarousel from "@/components/carousels/TestimonialCarousel";
 import SubdivisionCarousel from "@/components/carousels/SubdivisionsCarousel";
 import MapAdmin from "@/components/maps/map-admin";
+import Events from "@/components/Events";
 import Image from "next/image";
+import Counter from "@/components/counter";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-[#F5F7FA]">
 
       {/* header section */}
       <div className="bg-[url(/headers/home-header.png)] bg-cover bg-no-repeat bg-center">
@@ -18,8 +20,8 @@ export default function Home() {
           <h1 className="text-white">Homes. Community. Hope.</h1>
           <p className="w-2/3 text-white">First-time buyer or longtime resident, we’re here to guide you through buying, improving, and sustaining your home — with trusted counseling, affordable loans, and quality neighborhoods.</p>
           <div className="flex flex-row gap-3 mt-5">
-            <Button className="w-3xs" size="lg">Buy A Home</Button>
-            <Button className="w-3xs" size="lg" variant="secondary">Repair My Home</Button>
+            <Button className="w-[200px] py-6"  size="lg">Buy A Home</Button>
+            <Button className="w-[200px] py-6" size="lg" variant="secondary">Repair My Home</Button>
           </div>
         </div>
       </div>
@@ -34,15 +36,18 @@ export default function Home() {
           
           <div className="flex flex-row gap-3 py-5">
             <div className="w-1/3">
-              <h3>101</h3>
+              <h3><Counter end={101} /></h3>
               <p>Homes <br/> Built</p>
             </div>
             <div className="w-1/3">
-              <h3>$10.5M</h3>
+              <div className="flex flex-row items-center justify-center">
+                <h3><Counter prefix="$" end={10} /></h3>
+                <h3><Counter prefix="." end={5} suffix="M" /></h3>
+              </div>
               <p>Loans <br/> Originated</p>
             </div>
             <div className="w-1/3">
-              <h3>351</h3>
+              <h3><Counter end={351} /></h3>
               <p>Counseling <br/> Clients</p>
             </div>
 
@@ -61,54 +66,9 @@ export default function Home() {
       <div className="bg-gradient-to-r from-primary/95 to-secondary/95 bg-blend-overlay">
         <div className="w-[1140px] py-10 mx-auto justify-center flex flex-col text-center">
           <h4 className="text-white">EVENTS</h4>
-          <h1 className="text-white">Homes. Community. Hope.</h1>
-          <div className="flex flex-row gap-3 mt-5 mb-3">
+          <h2 className="text-white">Building Stronger Communities Together</h2>
+            <Events />
 
-            <div className="w-1/2 bg-white rounded-lg border-2 border-gray-300 text-left flex flex-row">
-
-              <div className="border-r-2 border-primary flex flex-col w-1/6  p-5 text-center justify-center">
-                <h3>15</h3>
-                <p>MAY</p>
-              </div>
-
-              <div className="flex flex-col w-5/6  p-5 gap-3">
-              <h4>AHSTI Event 1</h4>
-                <p>Join us for an evening of networking with business leaders from across the Rio Grande Valley</p>
-
-                <ul>
-                  <li>Date: May 15, 2024</li>
-                  <li>Time: 6:00 PM - 9:00 PM</li>
-                  <li>Location: McAllen Convention Center</li>
-                </ul>
-              <Button className="w-[150px]" size="lg">View Event</Button>
-
-              </div>
-            
-            </div>
-
-            <div className="w-1/2 bg-white rounded-lg border-2 border-gray-300 text-left flex flex-row">
-
-              <div className="border-r-2 border-primary flex flex-col w-1/6  p-5 text-center justify-center">
-                <h3>15</h3>
-                <p>MAY</p>
-              </div>
-
-              <div className="flex flex-col w-5/6  p-5 gap-3">
-              <h4>AHSTI Event 1</h4>
-                <p>Join us for an evening of networking with business leaders from across the Rio Grande Valley</p>
-
-                <ul>
-                  <li>Date: May 15, 2024</li>
-                  <li>Time: 6:00 PM - 9:00 PM</li>
-                  <li>Location: McAllen Convention Center</li>
-                </ul>
-              <Button className="w-[150px]" size="lg">View Event</Button>
-
-              </div>
-            
-            </div>
-
-          </div>
         </div>
       </div>
       </div>
@@ -138,7 +98,7 @@ export default function Home() {
       {/* Contact section */}
       <div className="w-[1140px] py-10 mx-auto justify-center flex flex-col text-center">
           <h4>CONTACT US</h4>
-          <h1>Reach Out To Our Administration Building</h1>
+          <h2>Reach Out To Our Administration Building</h2>
 
           <div className="flex flex-row mt-5 gap-5">
 
@@ -162,11 +122,21 @@ export default function Home() {
                             <p className="small-text text-left">FAX: 956-687-6263</p>
                         </div>
 
+
+                        <div className="flex flow-row gap-3">
+                            <Image 
+                                src="/svg/map.svg" 
+                                alt="phone"
+                                width={20}
+                                height={20} />
+                            <p className="small-text text-left">1420 Erie Ave, McAllen, TX 78501</p>
+                        </div>
+
                     </div>
               <MapAdmin />
             </div>
 
-            <div className="flex w-1/2 border-1 border-gray-300 shadow-md rounded-lg p-5">
+            <div className="bg-white flex w-1/2 border-1 border-gray-300 shadow-md rounded-lg p-5">
               <p>contact form</p>
             </div>
 

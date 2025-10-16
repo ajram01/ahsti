@@ -1,12 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "./ui/button";
 
   const navItems = [
-    { name: "ABOUT", href: "/" },
-    { name: "SUBDIVISIONS", href: "/" },
-    { name: "REPAIRS", href: "/" },
-    { name: "MAKE A PAYMENT", href: "/" },
-    { name: "CONTACT", href: "/" },
+    { name: "ABOUT", link: "/about" },
+    { name: "SUBDIVISIONS", link: "/subdivisions" },
+    { name: "REPAIRS", link: "/repairs" },
+    { name: "MAKE A PAYMENT", link: "/make-a-payment" },
+    { name: "CONTACT", link: "/contact" },
   ];
 
 export default function Header() {
@@ -54,21 +55,25 @@ export default function Header() {
             <div className="bg-white shadow-md flex flex-col">
                 <div className="w-[1140px] py-5 mx-auto flex flex-row text-black justify-between gap-10 items-center">
 
-                    <div className="flex w-1/5">                    
+                    <div className="flex w-1/5">
+                    <Link href="/">                    
                         <Image 
                         src="/logos/ahsti-logo.png" 
                         alt="Affordable Homes of South Texas Logo" 
                         width={300} height={100} />
+                    </Link>
                     </div>
 
                     <div className="flex w-3/5 justify-between">
                     {navItems.map((item, i) => (
-                        <h5 key={i}>{item.name}</h5>
+                        <Link key={i} href={item.link}>
+                            <h5>{item.name}</h5>
+                        </Link>
                     ))}
                     </div>
 
                     <div className="flex w-1/5">  
-                        <Button className="w-full">Buy A Home</Button>
+                        <Link href="/buy-a-home" className="w-full"><Button className="w-full py-6"  size="lg">Buy A Home</Button></Link>
                     </div>
 
 
