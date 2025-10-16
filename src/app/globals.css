@@ -53,6 +53,16 @@ li {
   font-size: 16px;
 }
 
+.swiper-pagination-bullet {
+  opacity: 0.6 !important; /* makes inactive bullets fully visible */
+}
+
+
+.swiper-pagination-bullet-active {
+  background-color: #007DC3 !important;
+  opacity: 1 !important;
+}
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
