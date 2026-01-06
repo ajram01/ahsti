@@ -45,7 +45,7 @@ export default function Subdivisions() {
       <div className="max-w-[1140px] w-full py-10 px-4 mx-auto flex flex-col text-center">
         <h4>GET STARTED</h4>
         <h2 className="mt-2">
-          Contact Our Administration Office
+          Contact Us
         </h2>
         <ContactSection />
       </div>

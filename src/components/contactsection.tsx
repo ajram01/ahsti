@@ -34,7 +34,7 @@ export default function ContactSection() {
                             alt="phone"
                             width={20}
                             height={20} />
-                        <p className="small-text text-left">1420 Erie Ave, McAllen, TX 78501</p>
+                        <p className="small-text text-left">500 S. 15th St. McAllen, TX 78501</p>
                     </div>
 
                 </div>

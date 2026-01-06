@@ -1,4 +1,4 @@
-import { Button } from "../../components/ui/button";
+import { Button } from "../../../components/ui/button";
 import ContinuousCarousel from "@/components/carousels/SliderImages";
 import ContactSection from "@/components/contactsection";
 import { CTASection } from "@/components/cta";
@@ -48,7 +48,7 @@ export default function BuyAHome() {
             <h2 className="text-base/12">Community-Driven Homeownership.</h2>
             <p className="mt-3">Unlike traditional builders or lenders, AHSTI is community-driven — not profit-driven. We focus on affordable financing, energy-efficient design, and personalized support for each buyer.
               <br /><br />
-              From credit counseling to closing, we’re with you every step of the way.</p>
+              From homebuyer to closing, we’re with you every step of the way.</p>
           </div>
 
         </div>

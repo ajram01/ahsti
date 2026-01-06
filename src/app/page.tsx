@@ -17,15 +17,15 @@ export default function Home() {
         <div className="bg-gradient-to-r from-black/65 to-black/25 bg-blend-overlay">
           <div className="max-w-[1140px] w-full h-[600px] mx-auto px-4 flex flex-col justify-center text-center sm:text-left">
             <h4 className="text-white">
-              NONPROFIT • HUD-APPROVED COUNSELING
+              NONPROFIT • HUD-APPROVED COACHING
             </h4>
             <h1 className="text-white">
               Homes. Community. Hope.
             </h1>
             <p className="text-white lg:w-2/3">
               First-time buyer or longtime resident, we’re here to guide you through
-              buying, improving, and sustaining your home — with trusted counseling,
-              affordable loans, and quality neighborhoods.
+              buying, improving, and sustaining your home — with trusted coaching,
+              mortgage financing, and quality neighborhoods.
             </p>
             <div className="flex flex-row gap-3 justify-center sm:justify-start mt-5">
               <Link href="/buy-a-home"><Button className="w-[160px] lg:w-[200px] py-6" size="lg">Buy A Home</Button></Link>
@@ -84,8 +84,7 @@ export default function Home() {
           </div>
 
           <p className="text-sm sm:text-base text-center">
-            Our mission is to make home ownership affordable for families by providing
-            quality homes, responsible financing, and the tools for long-term success.
+            Our mission is to enhance the quality of life by providing affordable housing and related services to eligible families.
           </p>
         </div>
 
@@ -110,7 +109,7 @@ export default function Home() {
       <div className="max-w-[1140px] w-full py-10 px-4 mx-auto flex flex-col text-center">
         <h4>OUR SERVICES</h4>
         <h2 className="text-2xl sm:text-3xl font-semibold mt-2">
-          One Stop Solution For All Your Home Buying Needs
+          One Stop Solution For All Your Home Buying And Repair Needs
         </h2>
       </div>
 
@@ -132,7 +131,7 @@ export default function Home() {
       <div className="max-w-[1140px] w-full py-10 px-4 mx-auto flex flex-col text-center -mt-8">
         <h4>GET STARTED</h4>
         <h2 className="mt-2">
-          Contact Our Administration Building
+          Contact Us
         </h2>
         <ContactSection />
       </div>

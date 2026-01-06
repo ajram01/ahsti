@@ -8,14 +8,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 const items = [
-  { location: "MISSION, TX", logo: "/subdivisions/white/crockett-estates.png", backgroundImage: "/subdivisions/crockett-estates.png", file: "/files/crockett-estates.pdf" },
+  { location: "ALAMO, TX", logo: "/subdivisions/white/crockett-estates.png", backgroundImage: "/subdivisions/crockett-estates.png", file: "/files/crockett-estates.pdf" },
   { location: "MERCEDES, TX", logo: "/subdivisions/white/crown-haven.png", backgroundImage: "/subdivisions/crown-haven.png", file: "/files/crown-haven.pdf" },
   { location: "EDINBURG, TX", logo: "/subdivisions/white/jaguar-heights.png", backgroundImage: "/subdivisions/speedy-trails.png", file: "/files/jaguar-heights.pdf" },
-  { location: "SAN JUAN, TX", logo: "/subdivisions/white/lakewood-estates.png", backgroundImage: "/subdivisions/speedy-trails.png", file: "/files/lakewood-estates.pdf" },
   { location: "WESLACO, TX", logo: "/subdivisions/white/mid-valley-estates.png", backgroundImage: "/subdivisions/mid-valley-estates.png", file: "/files/mid-valley-estates.pdf" },
   { location: "MISSION, TX", logo: "/subdivisions/white/speedy-trails.png", backgroundImage: "/subdivisions/speedy-trails.png", file: "/files/speedy-trails.pdf" },
-  { location: "MCALLEN, TX", logo: "/subdivisions/white/stonebriar.png", backgroundImage: "/subdivisions/speedy-trails.png", file: "/files/stonebriar.pdf" },
   { location: "MERCEDES, TX", logo: "/subdivisions/white/tiger-crossing.png", backgroundImage: "/subdivisions/tiger-crossing.png", file: "/files/tiger-crossing.pdf" },
+  { location: "MCALLEN, TX", logo: "/subdivisions/white/stonebriar.png", backgroundImage: "/subdivisions/speedy-trails.png", file: "/files/stonebriar.pdf" },
 ];
 
 export default function CommunitiesCarousel() {

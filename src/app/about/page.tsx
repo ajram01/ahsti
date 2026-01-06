@@ -9,15 +9,13 @@ import Link from "next/link";
 export default function About() {
 
   const leaders = [
-    { name: "Myra L. Martinez", role: "Executive Vice President/COO", image: "" },
+    { name: "Myra L. Martinez", role: "President/CEO", image: "" },
     { name: "Cynthia Torres", role: "Executive Vice President/CFO", image: "" },
     { name: "Aidee Castro", role: "Vice President/Director of Lending", image: "/team/aidee.png" },
     { name: "Tony Fernandez", role: "Vice President/Construction Director", image: "/team/tony.png" },
-    { name: "Rey Jaquez", role: "Vice President/Director of Financial Planning", image: "" },
     { name: "Janie Vela", role: "Vice President/Director of Homebuyer Development", image: "/team/janie.png" },
     { name: "Mark Hernandez", role: "Vice President/Director of Administration", image: "/team/mark.png" },
-    { name: "Xavier Jimenez", role: "Vice President/Director of Real Estate Services", image: "/team/xavier.png" },
-    { name: "Laura Rangel", role: "President & CEO - Hope Insurance Agency, LLC", image: "/team/laura.png" }
+    { name: "Xavier Jimenez", role: "Vice President/Director of Real Estate Services", image: "/team/xavier.png" }
   ];
 
   const board = [
@@ -79,14 +77,14 @@ export default function About() {
 
         <div className="bg-[url(/images/family1.png)] bg-cover bg-no-repeat bg-top w-full lg:w-1/2 min-h-[400px]"></div>
 
-        <div className="bg-gradient-to-r from-primary/95 to-secondary/95 bg-blend-overlay w-full lg:w-1/2 text-white">
+        <div className="bg-gradient-to-r from-primary/95 to-secondary/95 bg-blend-overlay w-full lg:w-1/2 text-white py-5">
           <div className="w-full lg:w-[570px] py-10 lg:py-20 px-5 lg:pl-5 text-center lg:text-left">
             <h4>OUR IMPACT</h4>
             <h2>Changing Lives,<br /> One Family at a Time</h2>
-            <p>Owning our first home was a dream that always felt just out of reach. With AHSTI’s help, that dream finally came true. From the first meeting to the day we received our keys, their team treated us like family. They didn’t just help us buy a house, they helped us build a future. Our kids finally have a safe place to grow up, and we now have the stability we always hoped for. AHSTI gave us more than a home; they gave us hope.</p>
+            <p>&ldquo;I tell people 100% to go for it. You don’t know if you don’t try. Everyone that we interacted with was so helpful. The information they provide helps ease the nerves, especially the classes they offer, like money management and new homeowner classes.&rdquo;</p>
             <p>
-              <br /><b>-The Ramirez Family</b><br />
-              McAllen, TX</p>
+              <br /><b>-The Vallejo Family</b><br />
+              Mission, TX</p>
           </div>
 
         </div>
@@ -171,7 +169,7 @@ export default function About() {
       <div className="max-w-[1140px] w-full py-10 px-4 mx-auto flex flex-col text-center">
         <h4>GET STARTED</h4>
         <h2 className="mt-2">
-          Contact Our Administration Building
+          Contact Us
         </h2>
         <ContactSection />
       </div>

@@ -12,13 +12,13 @@ const items = [
   {
     name: "Crocket Estates",
     location: "ALAMO, TX",
-    desc: "Crockett Estates offers new, thoughtfully designed homes ranging from 1,579 to 1,876 sq. ft. in McAllen, TX, featuring gas service, included front landscaping, and homebuyer assistance for eligible households.",
+    desc: "Crockett Estates offers new, thoughtfully designed homes ranging from 1,579 to 1,876 sq. ft. in Alamo, TX, featuring gas service, included front landscaping, and homebuyer assistance for eligible households.",
     img: "/subdivisions/crockett-estates.png",
     file: "/files/crockett-estates.pdf"
   },
   {
     name: "Crown Haven",
-    location: "WESLACO, TX",
+    location: "MERCEDES, TX",
     desc: "Crown Haven features Accent Series floor plans from 1,106 to 1,563 sq. ft., with options for no carport, carport, or a 1-car garage, unique front landscaping, and homebuyer assistance for eligible households.",
     img: "/subdivisions/crown-haven.png",
     file: "/files/crown-haven.pdf"
@@ -29,13 +29,6 @@ const items = [
     desc: "Jaguar Heights features floor plans from 1,579 to 1,896 sq. ft., with optional stucco and stone exteriors, included front landscaping, and homebuyer assistance available for eligible households.",
     img: "/subdivisions/crockett-estates.png",
     file: "/files/jaguar-heights.pdf"
-  },
-  {
-    name: "Lakewood Estates",
-    location: "SAN JUAN, TX",
-    desc: "Lakewood Estates offers Classic and Exploration Series homes from 1,579 to 1,876 sq. ft., featuring available gas service, included front landscaping, and homebuyer assistance for eligible households.",
-    img: "/subdivisions/tiger-crossing.png",
-    file: "/files/lakewood-estates.pdf"
   },
   {
     name: "Mid Valley Estates",
