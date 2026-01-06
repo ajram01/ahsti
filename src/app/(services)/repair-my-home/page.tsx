@@ -1,4 +1,4 @@
-import { Button } from "../../components/ui/button";
+import { Button } from "../../../components/ui/button";
 import ContinuousCarousel from "@/components/carousels/SliderImages";
 import ContactSection from "@/components/contactsection";
 import { CTASection } from "@/components/cta";
@@ -46,7 +46,7 @@ export default function Repairs() {
       <div className="max-w-[1140px] w-full py-10 px-4 mx-auto flex flex-col text-center">
         <h4>GET STARTED</h4>
         <h2 className="mt-2">
-          Contact Our Administration Building
+          Contact Us
         </h2>
         <ContactSection />
       </div>

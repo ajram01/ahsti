@@ -59,6 +59,10 @@ h5 {
     font-size: 20px;
   }
 
+  h5 {
+    font-size: 16px;
+  }
+
 }
 
 p {
@@ -69,7 +73,7 @@ p {
 }
 
 p.small-text {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 li {
