@@ -88,7 +88,8 @@ export default function MakeAPayment() {
         <h2 className="mt-2">
           Contact Us
         </h2>
-        <ContactSection />
+        {/* servicing@ahsti.org */}
+        <ContactSection email="spruneda134@gmail.com" />
       </div>
 
       {/* Carousel Section */}

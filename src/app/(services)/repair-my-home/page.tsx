@@ -48,7 +48,8 @@ export default function Repairs() {
         <h2 className="mt-2">
           Contact Us
         </h2>
-        <ContactSection />
+        {/* homerepair@ahsti.org */}
+        <ContactSection email="spruneda134@gmail.com" />
       </div>
 
       {/* Carousel Section */}
