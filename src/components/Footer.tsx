@@ -32,6 +32,7 @@ export default function Footer() {
   ];
 
   const notices = [
+    { name: "Public Notices", file: "/publicnotices" },
     { name: "Consumer Complaint Notice", file: "/notices/mortgage_company_consumer_complaint_notice_website.pdf" },
     { name: "Online Privacy Notice", file: "/privacynotice" },
     { name: "Civil Rights Notice", file: "/civilrights" },
