@@ -1,6 +1,6 @@
 import { Button } from "../../../components/ui/button";
 import ContinuousCarousel from "@/components/carousels/SliderImages";
-import ContactSection from "@/components/contactsection";
+import ContactRequest from "@/components/contactrequest";
 import { CTASection } from "@/components/cta";
 import { RepairsAccordion } from "@/components/RepairsAccordion";
 import Link from "next/link";
@@ -46,10 +46,10 @@ export default function Repairs() {
       <div className="max-w-[1140px] w-full py-10 px-4 mx-auto flex flex-col text-center">
         <h4>GET STARTED</h4>
         <h2 className="mt-2">
-          Contact Us
+          Construction Repair Form
         </h2>
         {/* homerepair@ahsti.org */}
-        <ContactSection email="spruneda134@gmail.com" />
+        <ContactRequest email="salvador@rgvisionmedia.com" />
       </div>
 
       {/* Carousel Section */}
