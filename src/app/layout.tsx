@@ -3,17 +3,17 @@ import { Poppins, Merriweather } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import Providers from "./Providers";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["500", "600", "700"], // medium, semibold, bold
+  weight: ["500", "600", "700"],
   variable: "--font-poppins",
 });
 
 const merriweather = Merriweather({
   subsets: ["latin"],
-  weight: ["300", "400"], // regular
+  weight: ["300", "400"],
   variable: "--font-merriweather",
 });
 
@@ -23,27 +23,23 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
-
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
         className={`${poppins.variable} ${merriweather.variable} antialiased`}
       >
-        <GoogleReCaptchaProvider
-          reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
-          scriptProps={{ async: true, defer: true }}
-        >
+        <Providers>
           <Header />
           {children}
           <Footer />
-        </GoogleReCaptchaProvider>
+        </Providers>
       </body>
     </html>
   );
