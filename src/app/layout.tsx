@@ -3,16 +3,17 @@ import { Poppins, Merriweather } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Providers from "./Providers";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["500", "600", "700"], // medium, semibold, bold
+  weight: ["500", "600", "700"],
   variable: "--font-poppins",
 });
 
 const merriweather = Merriweather({
   subsets: ["latin"],
-  weight: ["300", "400"], // regular
+  weight: ["300", "400"],
   variable: "--font-merriweather",
 });
 
@@ -22,22 +23,23 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
-
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
         className={`${poppins.variable} ${merriweather.variable} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

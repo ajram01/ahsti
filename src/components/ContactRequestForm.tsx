@@ -1,5 +1,5 @@
 'use client';
-
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -12,8 +12,14 @@ export default function ContactRequestForm(emailProp: { email?: string }) {
     const [message, setMessage] = useState('');
     const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
+    const { executeRecaptcha } = useGoogleReCaptcha();
+
     async function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
+
+        if (!executeRecaptcha) return;
+        const token = await executeRecaptcha("contact_form");
+
         setStatus('sending');
 
         // Generate current timestamp for submission date
@@ -40,6 +46,7 @@ export default function ContactRequestForm(emailProp: { email?: string }) {
             <p><b>Closing Date:</b> ${closingDate}</p>
             <p><b>Description of Issue:</b> ${message}</p>
           `,
+                    token,
                 }),
             });
 
@@ -177,8 +184,8 @@ export default function ContactRequestForm(emailProp: { email?: string }) {
                         type="submit"
                         disabled={status === 'sending'}
                         className={`rounded-full p-2 text-white transition ${status === 'sending'
-                                ? 'bg-gray-400 cursor-not-allowed'
-                                : 'bg-primary hover:bg-accent hover:border-[var(--color-primary-hover)]'
+                            ? 'bg-gray-400 cursor-not-allowed'
+                            : 'bg-primary hover:bg-accent hover:border-[var(--color-primary-hover)]'
                             }`}
                     >
                         {status === 'sending' ? 'Sending...' : 'Submit Request'}
