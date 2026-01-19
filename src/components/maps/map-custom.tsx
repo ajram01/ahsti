@@ -1,7 +1,7 @@
 // components/MapEmbed.tsx
 export default function MapAdminCustom({ location }: { location: string }) {
     return (
-        <div className="w-full h-[400px] rounded-lg overflow-hidden">
+        <div className="w-full h-[408px] rounded-lg overflow-hidden">
 
             <iframe src={location}
                 width="100%"

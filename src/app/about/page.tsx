@@ -103,7 +103,7 @@ export default function About() {
           <div className="flex flex-wrap justify-center">
             {leaders.map((item, index) => (
               <div key={index} className="flex flex-col items-center w-full md:w-1/3 px-5 my-10">
-                <div className="bg-primary h-[325px] hover:h-[315px] md:h-[265px] md:hover:h-[255px] lg:h-[325px] lg:hover:h-[315px] w-full flex items-end justify-center origin-bottom transition-all duration-300">
+                <div className="bg-primary h-[325px] hover:h-[315px] md:h-[265px] md:hover:h-[255px] lg:h-[325px] lg:hover:h-[315px] w-full max-w-[350px] flex items-end justify-center origin-bottom transition-all duration-300">
                   {item.image ? (
                     <Image src={item.image} alt={item.name} width={350} height={350} />
                   ) : (
