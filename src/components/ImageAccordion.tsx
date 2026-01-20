@@ -2,18 +2,18 @@
 
 import { useState } from "react";
 import Image from "next/image";
-
 interface AccordionImage {
   src: string;
   alt: string;
   title?: string;
+  link?: string;
 }
 
 const images: AccordionImage[] = [
-  { src: "/accordion/accordion1.png", alt: "House 1", title: "Home Buying" },
-  { src: "/accordion/accordion2.png", alt: "House 2", title: "Home Improvement" },
-  { src: "/accordion/accordion3.png", alt: "House 3", title: "Emergency Repair Grant" },
-  { src: "/accordion/accordion4.png", alt: "House 4", title: "Rental & Mortgage Assistance" },
+  { src: "/accordion/accordion1.png", alt: "House 1", title: "Home Buying", link:"/buy-a-home" },
+  { src: "/accordion/accordion2.png", alt: "House 2", title: "Home Improvement", link:"/repair-my-home" },
+  { src: "/accordion/accordion3.png", alt: "House 3", title: "Emergency Repair Grant", link:"/repair-my-home" },
+  { src: "/accordion/accordion4.jpg", alt: "House 4", title: "Rental & Mortgage Assistance", link:"/repair-my-home" },
 ];
 
 export default function ImageAccordion() {
@@ -55,7 +55,7 @@ export default function ImageAccordion() {
           >
             <h3 className="text-white text-2xl font-semibold drop-shadow-md text-center">
               {img.title}
-              <p>Learn More →</p>
+              <p><a href={img.link}>Learn More →</a></p>
             </h3>
           </div>
         </div>

@@ -8,7 +8,7 @@ export default function Contact() {
     <div className="bg-[#F5F7FA]">
 
       {/* header section */}
-      <div className="bg-[url(/headers/header7.png)] bg-cover bg-no-repeat bg-center bg-fixed">
+      <div className="bg-[url(/headers/header9.jpg)] bg-cover bg-no-repeat bg-center bg-fixed">
         <div className="bg-gradient-to-r from-black/65 to-black/25 bg-blend-overlay">
           <div className="max-w-[1140px] w-full h-[600px] mx-auto px-4 flex flex-col justify-center text-center sm:text-left">
             <h4 className="text-white">CONTACT AHSTI</h4>
