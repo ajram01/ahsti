@@ -9,8 +9,8 @@ import Link from "next/link";
 export default function About() {
 
   const leaders = [
-    { name: "Myra L. Martinez", role: "President/CEO", image: "" },
-    { name: "Cynthia Torres", role: "Executive Vice President/CFO", image: "" },
+    { name: "Myra L. Martinez", role: "President/CEO", image: "/team/myra.png" },
+    { name: "Cynthia Torres", role: "Executive Vice President/CFO", image: "/team/cynthia.png" },
     { name: "Aidee Castro", role: "Vice President/Director of Lending", image: "/team/aidee.png" },
     { name: "Tony Fernandez", role: "Vice President/Construction Director", image: "/team/tony.png" },
     { name: "Janie Vela", role: "Vice President/Director of Homebuyer Development", image: "/team/janie.png" },
