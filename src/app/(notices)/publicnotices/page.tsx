@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
   const notices = [
+    { name: "January 2026 Board Agenda", href: "/notices/board-meetings/Board-Meeting-Agenda-POSTING-Jan-2026.pdf" },
     { name: "November 2025 Board Agenda", href: "/notices/board-meetings/Board-Meeting-Agenda-November-2025.pdf" },
   ];
 

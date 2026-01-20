@@ -63,7 +63,7 @@ export default function HopeFundInvestment() {
 
           </div>
 
-          <div className="w-full lg:w-1/2 bg-[url(/images/family5.png)] bg-center bg-cover rounded-lg h-[400px] lg:h-auto"></div>
+          <div className="w-full lg:w-1/2 bg-[url(/images/community2.jpg)] bg-center bg-cover rounded-lg h-[400px] lg:h-auto"></div>
         </div>
       </div>
 

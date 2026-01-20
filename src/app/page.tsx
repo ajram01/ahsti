@@ -89,7 +89,7 @@ export default function Home() {
         </div>
 
         {/* Image */}
-        <div className="w-full lg:w-1/2 h-[300px] lg:h-[550px] bg-[url(/images/house1.png)] bg-cover bg-center rounded-lg"></div>
+        <div className="w-full lg:w-1/2 h-[300px] lg:h-[550px] bg-[url(/images/community.jpg)] bg-cover bg-center rounded-lg"></div>
       </div>
 
       {/* Events Section */}
