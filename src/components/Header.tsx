@@ -10,6 +10,13 @@ const navItems = [
   { name: "About", link: "/about" },
   { name: "Subdivisions", link: "/subdivisions" },
   { name: "Invest in AHSTI", link: "/invest-in-ahsti" },
+  { name: "Notices", 
+    children: [
+      { name: "Civil Rights Notice", link: "/civilrights" },
+      { name: "AHSTI Privacy Notice", link: "/privacynotice" },
+      { name: "Public Notices", link: "/publicnotices" },
+    ],
+  },
   {
     name: "Services",
     children: [
