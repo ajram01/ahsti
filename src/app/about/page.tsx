@@ -52,7 +52,7 @@ export default function About() {
             <h1 className="text-white">We Build For People</h1>
             <p className="text-white lg:w-2/3">Affordable Homes of South Texas, Inc. (AHSTI) is a community-based non-profit organization dedicated to enhancing the quality of life by providing affordable housing and related services to eligible families.</p>
             <div className="flex flex-row gap-3 justify-center sm:justify-start mt-5">
-              <Link href="/buy-a-home"><Button className="w-[160px] lg:w-[200px] py-6" size="lg">Buy A Home</Button></Link>
+              <Link href="https://www.myahstihome.org"><Button className="w-[160px] lg:w-[200px] py-6" size="lg">Apply Now</Button></Link>
               <Link href="/repair-my-home"><Button className="w-[160px] lg:w-[200px] py-6" size="lg" variant="secondary">Repair My Home</Button></Link>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function About() {
       {/* board section */}
       <div className="bg-white w-full">
         <div className="max-w-[1140px] w-full py-10 mx-auto flex flex-col text-center">
-          <h4>FISCAL YEAR 25&apos;</h4>
+          <h4>FISCAL YEAR 26&apos;</h4>
           <h2 className="mt-2 mb-6">Board Of Directors</h2>
           <div className="flex flex-wrap justify-center gap-4">
             {board.map((item, index) => (
@@ -145,7 +145,7 @@ export default function About() {
         </div>
 
         <div className="max-w-[1140px] w-full py-10 mx-auto flex flex-col text-center">
-          <h4>FISCAL YEAR 25&apos;</h4>
+          <h4>FISCAL YEAR 26&apos;</h4>
           <h2 className="mt-2 mb-6">Advisory Board</h2>
           <div className="flex flex-wrap justify-center gap-4">
             {advisory.map((item, index) => (

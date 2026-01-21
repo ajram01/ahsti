@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Button } from "./ui/button"
+import Link from "next/link"
 
 export function RepairsAccordion() {
   const items = [
@@ -48,7 +49,7 @@ export function RepairsAccordion() {
           </AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
             <p>{item.content}</p>
-            <Button>Next Steps</Button>
+            <Link href="https://www.myahstihome.org"><Button>Next Steps</Button></Link>
           </AccordionContent>
         </AccordionItem>
       ))}

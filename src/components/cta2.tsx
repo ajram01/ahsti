@@ -15,7 +15,7 @@ export function CTASection2() {
           </div>
 
           <div className="w-full lg:w-1/4 flex flex-row lg:flex-col items-center justify-center gap-5">
-            <Link href="/"><Button className="w-[160px] lg:w-[200px] py-6 mt-2" size="lg" variant="secondary">
+            <Link href="https://ahsti.estatusconnect.com/User/Login"><Button className="w-[160px] lg:w-[200px] py-6 mt-2" size="lg" variant="secondary">
               Make a Payment
             </Button></Link>
             <Link href="/contact"><Button className="w-[160px] lg:w-[200px] py-6 mt-2" size="lg" variant="secondary">

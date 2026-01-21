@@ -9,7 +9,7 @@ import { ChevronDown } from "lucide-react";
 const navItems = [
   { name: "About", link: "/about" },
   { name: "Subdivisions", link: "/subdivisions" },
-  { name: "Hope Fund Investment", link: "/hope-fund-investment" },
+  { name: "Invest in AHSTI", link: "/invest-in-ahsti" },
   {
     name: "Services",
     children: [

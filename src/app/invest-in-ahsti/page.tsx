@@ -12,11 +12,11 @@ export default function HopeFundInvestment() {
       <div className="bg-[url(/headers/header1.png)] bg-cover bg-no-repeat bg-center bg-fixed">
         <div className="bg-gradient-to-r from-black/65 to-black/25 bg-blend-overlay">
           <div className="max-w-[1140px] w-full h-[600px] mx-auto px-4 flex flex-col justify-center text-center sm:text-left">
-            <h4 className="text-white">INVEST IN COMMUNITIES</h4>
+            <h4 className="text-white">INVEST IN AHSTI</h4>
             <h1 className="text-white">Make Your Cash Work Harder.</h1>
-            <p className="text-white lg:w-2/3">Align your financial strategy with your values through the Hope Investment Fund’s partnership with CNote. Access secure, 100% insured cash management and fixed-income solutions that deliver competitive returns while fueling small businesses, affordable housing, and social progress nationwide.</p>
+            <p className="text-white lg:w-2/3">Align your financial strategy with your values through AHSTI’s partnership with CNote. Access secure, 100% insured cash management and fixed-income solutions that deliver competitive returns while fueling small businesses, affordable housing, and social progress nationwide.</p>
             <div className="flex flex-row gap-3 justify-center sm:justify-start mt-5">
-              <Link href="https://www.mycnote.com/?code=6AAGh7XZc"><Button className="w-[160px] lg:w-[200px] py-6" size="lg">Invest with Hope</Button></Link>
+              <Link href="https://www.mycnote.com/?code=6AAGh7XZc"><Button className="w-[160px] lg:w-[200px] py-6" size="lg">Invest in AHSTI</Button></Link>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function HopeFundInvestment() {
             <b>4. Track Your Progress</b><br />
             Use the seamless and secure platform to monitor your financial performance alongside the tangible stories of the lives you are changing.
           </p>
-          <Link href="https://www.mycnote.com/?code=6AAGh7XZc"><Button className="w-[160px] lg:w-[200px]  py-6 mt-5" size="lg">Invest with Hope</Button></Link>
+          <Link href="https://www.mycnote.com/?code=6AAGh7XZc"><Button className="w-[160px] lg:w-[200px]  py-6 mt-5" size="lg">Invest in AHSTI</Button></Link>
         </div>
 
       </div>

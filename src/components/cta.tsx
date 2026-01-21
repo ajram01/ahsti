@@ -16,8 +16,8 @@ export function CTASection() {
           </div>
 
           <div className="w-full lg:w-1/4 flex flex-row lg:flex-col items-center justify-center gap-5">
-            <Link href="/buy-a-home"><Button className="w-[160px] lg:w-[200px] py-6 mt-2" size="lg" variant="secondary">
-              Buy A Home
+            <Link href="https://www.myahstihome.org"><Button className="w-[160px] lg:w-[200px] py-6 mt-2" size="lg" variant="secondary">
+              Apply Now
             </Button></Link>
             <Link href="/subdivisions"><Button className="w-[160px] lg:w-[200px] py-6 mt-2" size="lg" variant="secondary">
               View Properties

@@ -17,7 +17,7 @@ export default function Repairs() {
             <h1 className="text-white">Home Improvement</h1>
             <p className="text-white lg:w-2/3">Explore home repair and replacement programs designed to help eligible homeowners in the Rio Grande Valley improve their living conditions through affordable financing and community partnerships. All programs are income based.</p>
             <div className="flex flex-row gap-3 justify-center sm:justify-start mt-5">
-              <Link href="/buy-a-home"><Button className="w-[160px] lg:w-[200px] py-6" size="lg">Buy A Home</Button></Link>
+              <Link href="https://www.myahstihome.org"><Button className="w-[160px] lg:w-[200px] py-6" size="lg">Apply Now</Button></Link>
               <Link href="/repair-my-home"><Button className="w-[160px] lg:w-[200px] py-6" size="lg" variant="secondary">Repair My Home</Button></Link>
             </div>
           </div>
