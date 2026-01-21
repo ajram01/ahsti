@@ -16,7 +16,7 @@ export function CTASection3() {
 
                     <div className="w-full lg:w-1/4 flex flex-row lg:flex-col items-center justify-center gap-5">
                         <Link href="https://www.mycnote.com/?code=6AAGh7XZc"><Button className="w-[160px] lg:w-[200px] py-6 mt-2" size="lg" variant="secondary">
-                            Invest with Hope
+                            Invest in AHSTI
                         </Button></Link>
                         <Link href="/contact"><Button className="w-[160px] lg:w-[200px] py-6 mt-2" size="lg" variant="secondary">
                             Contact Us
