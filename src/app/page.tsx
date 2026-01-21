@@ -28,7 +28,7 @@ export default function Home() {
               mortgage financing, and quality neighborhoods.
             </p>
             <div className="flex flex-row gap-3 justify-center sm:justify-start mt-5">
-              <Link href="www.myahstihome.org"><Button className="w-[160px] lg:w-[200px] py-6" size="lg">Apply Now</Button></Link>
+              <Link href="https://www.myahstihome.org"><Button className="w-[160px] lg:w-[200px] py-6" size="lg">Apply Now</Button></Link>
               <Link href="/repair-my-home"><Button className="w-[160px] lg:w-[200px] py-6" size="lg" variant="secondary">Repair My Home</Button></Link>
             </div>
 
