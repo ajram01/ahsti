@@ -15,7 +15,7 @@ export default function Contact() {
             <h1 className="text-white">We’re Here To Help.</h1>
             <p className="text-white lg:w-2/3">Connect with AHSTI to learn more about our housing programs, get help with your mortgage account, or ask questions about home repair, replacement, or financing options—our team is ready to support you by phone, email, or in person.</p>
             <div className="flex flex-row gap-3 justify-center sm:justify-start mt-5">
-              <Link href="/buy-a-home"><Button className="w-[160px] lg:w-[200px] py-6" size="lg">Buy A Home</Button></Link>
+              <Link href="https://www.myahstihome.org"><Button className="w-[160px] lg:w-[200px] py-6" size="lg">Apply Now</Button></Link>
               <Link href="/repair-my-home"><Button className="w-[160px] lg:w-[200px] py-6" size="lg" variant="secondary">Repair My Home</Button></Link>
             </div>
           </div>
