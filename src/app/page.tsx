@@ -8,6 +8,12 @@ import Events from "@/components/Events";
 import Counter from "@/components/counter";
 import ContactSection from "@/components/contactsection";
 import StatsCarousel from "@/components/carousels/StatsCarousel";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Affordable Homes of South Texas, Inc.",
+  description: "AHSTI empowers South Texas growth through investment, development, and community initiatives. Discover opportunities with AHSTI.",
+};
 
 export default function Home() {
   return (

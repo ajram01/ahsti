@@ -3,6 +3,12 @@ import ContactSection from "@/components/contactsection";
 import { CTASection } from "@/components/cta";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Public Notices | AHSTI",
+  description: "Access AHSTI public notices, announcements, and official updates related to community development.",
+};
 
   const notices = [
     { name: "January 2026 Board Agenda", href: "/notices/board-meetings/Board-Meeting-Agenda-POSTING-Jan-2026.pdf" },

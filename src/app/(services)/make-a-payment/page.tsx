@@ -3,6 +3,12 @@ import ContinuousCarousel from "@/components/carousels/SliderImages";
 import ContactSection from "@/components/contactsection";
 import { CTASection2 } from "@/components/cta2";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Make a Payment | AHSTI",
+  description: "Make a secure payment to AHSTI online quickly and easily for your home or account.",
+};
 
 export default function MakeAPayment() {
   return (

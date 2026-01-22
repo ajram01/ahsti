@@ -12,9 +12,9 @@ const navItems = [
   { name: "Invest in AHSTI", link: "/invest-in-ahsti" },
   { name: "Notices", 
     children: [
+      { name: "Public Notices", link: "/publicnotices" },
       { name: "Civil Rights Notice", link: "/civilrights" },
       { name: "AHSTI Privacy Notice", link: "/privacynotice" },
-      { name: "Public Notices", link: "/publicnotices" },
     ],
   },
   {

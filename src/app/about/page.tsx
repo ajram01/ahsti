@@ -5,6 +5,12 @@ import { CTASection } from "@/components/cta";
 import Timeline from "@/components/Timeline";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us | AHSTI",
+  description: "Learn about AHSTI’s mission, leadership, and impact driving economic development and community growth in South Texas.",
+};
 
 export default function About() {
 

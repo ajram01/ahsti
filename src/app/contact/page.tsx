@@ -2,6 +2,12 @@ import { Button } from "../../components/ui/button";
 import ContinuousCarousel from "@/components/carousels/SliderImages";
 import { ContactTabs } from "@/components/ContactTabs";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us | AHSTI",
+  description: "Contact AHSTI to learn more about investment opportunities, projects, and community development initiatives.",
+};
 
 export default function Contact() {
   return (

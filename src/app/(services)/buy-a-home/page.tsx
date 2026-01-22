@@ -4,6 +4,12 @@ import ContactSection from "@/components/contactsection";
 import { CTASection } from "@/components/cta";
 import VideoFrame from "@/components/VideoFrame";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Buy a Home | AHSTI",
+  description: "Explore AHSTI homeownership opportunities and find affordable homes designed for South Texas families.",
+};
 
 export default function BuyAHome() {
   return (
