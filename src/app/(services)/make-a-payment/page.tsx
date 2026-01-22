@@ -52,7 +52,7 @@ export default function MakeAPayment() {
             <b>4. Make Your Payment</b><br />
             Once logged in, you’ll be able to make a secure mortgage payment.
           </p>
-          <Button className="w-full lg:w-[200px] py-6 mt-5" size="lg">Learn More</Button>
+          <Link href="https://ahsti.estatusconnect.com/User/Login" target="_blank" rel="noopener noreferrer"><Button className="w-full lg:w-[200px] py-6 mt-5" size="lg">Make a Payment</Button></Link>
         </div>
 
         <div className="w-full lg:w-1/2 bg-[url(/images/family2.png)] bg-center bg-cover rounded-lg h-[400px] lg:h-auto"></div>
