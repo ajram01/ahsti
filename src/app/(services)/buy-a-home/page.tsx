@@ -61,7 +61,7 @@ export default function BuyAHome() {
           <h2 className="text-base/12">Easy to Qualify. Ready to Succeed.</h2>
           <p className="mt-3">AHSTI homeownership programs are designed for working families who meet income and credit guidelines. Eligibility is based on your household size, income level, and financial readiness. We’ll guide you through every step.
           </p>
-          <Button className="py-6 mt-5" size="lg">View Current HUD Income Limits</Button>
+          <Link href="/files/hud-income.pdf" target="_blank" rel="noopener noreferrer"><Button className="py-6 mt-5" size="lg">View Current HUD Income Limits</Button></Link>
         </div>
 
         <div className="w-full lg:w-1/2 rounded-lg"><VideoFrame src="https://player.vimeo.com/video/906512930" /></div>
