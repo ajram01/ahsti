@@ -1,6 +1,12 @@
 import ContinuousCarousel from "@/components/carousels/SliderImages";
 import ContactSection from "@/components/contactsection";
 import { CTASection } from "@/components/cta";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Civil Rights | AHSTI",
+  description: "View AHSTI’s civil rights policies and commitment to equal opportunity, fairness, and non-discrimination.",
+};
 
 export default function CivilRights() {
     return (

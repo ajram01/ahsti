@@ -3,6 +3,12 @@ import ContinuousCarousel from "@/components/carousels/SliderImages";
 import ContactSection from "@/components/contactsection";
 import { CTASection3 } from "@/components/cta3";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Invest in AHSTI | AHSTI",
+  description: "Invest in AHSTI and be part of transformative projects driving economic growth and lasting community impact.",
+};
 
 export default function HopeFundInvestment() {
   return (

@@ -4,6 +4,12 @@ import ContactRequest from "@/components/contactrequest";
 import { CTASection } from "@/components/cta";
 import { RepairsAccordion } from "@/components/RepairsAccordion";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Repair My Home | AHSTI",
+  description: "Request AHSTI home repair services and resources to maintain and improve your home.",
+};
 
 export default function Repairs() {
   return (

@@ -1,6 +1,12 @@
 import ContinuousCarousel from "@/components/carousels/SliderImages";
 import ContactSection from "@/components/contactsection";
 import { CTASection } from "@/components/cta";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Notice | AHSTI",
+  description: "Read AHSTI’s privacy notice explaining how we collect, use, and protect your personal information.",
+};
 
 export default function PrivacyNotice() {
   return (

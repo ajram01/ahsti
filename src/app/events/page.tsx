@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Calendar, Clock, MapPin } from "lucide-react";
-
 import { client } from "@/sanity/lib/client";
 import imageUrlBuilder from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
@@ -9,7 +8,7 @@ import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 export const metadata: Metadata = {
   title: "Events | AHSTI",
   description:
-    "Upcoming and past events from Affordable Homes of South Texas, Inc.",
+    "Stay updated on AHSTI events, meetings, and community gatherings shaping growth and investment in South Texas.",
 };
 
 const EVENTS_QUERY = `*[

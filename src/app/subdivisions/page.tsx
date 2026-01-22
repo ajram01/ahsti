@@ -4,6 +4,12 @@ import ContactSection from "@/components/contactsection";
 import { CTASection } from "@/components/cta";
 import CommunitiesCarousel from "@/components/carousels/CommunitiesCarousel";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Subdivisions | AHSTI",
+  description: "Explore AHSTI subdivisions offering prime land and development opportunities for homes and businesses in South Texas.",
+};
 
 export default function Subdivisions() {
   return (

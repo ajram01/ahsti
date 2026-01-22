@@ -23,6 +23,15 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
+  openGraph: {
+    images: [
+      {
+        url: "logos/social-preview.png", // Must be an absolute URL in production
+        alt: "Affordable Homes of South Texas",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
