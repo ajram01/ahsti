@@ -55,7 +55,7 @@ export default function Repairs() {
           Construction Repair Form
         </h2>
         {/* homerepair@ahsti.org */}
-        <ContactRequest email="salvador@rgvisionmedia.com" />
+        <ContactRequest email="homerepair@ahsti.org" />
       </div>
 
       {/* Carousel Section */}
