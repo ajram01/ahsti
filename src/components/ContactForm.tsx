@@ -26,7 +26,7 @@ export default function ContactForm(emailProp: { email?: string }) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           to: emailProp.email || 'info@ahsti.org', // info@ahsti.org
-          subject: 'New Website Form Contact Submission',
+          subject: 'New Website Contact Form Submission',
           html: `<p><b>Name:</b> ${name}</p><p><b>Phone:</b> ${phone}</p><p><b>Email:</b> ${email}</p><p><b>Message:</b> ${message}</p>`,
           token,
         }),

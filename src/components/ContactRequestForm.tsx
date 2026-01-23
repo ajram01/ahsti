@@ -34,7 +34,7 @@ export default function ContactRequestForm(emailProp: { email?: string }) {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     to: emailProp.email || 'info@ahsti.org',
-                    subject: 'New Website Form Contact Submission',
+                    subject: 'New Website Repair Request Form Submission',
                     html: `
             <h3>New Issue Report</h3>
             <p><b>Submission Date:</b> ${submissionDate}</p>

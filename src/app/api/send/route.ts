@@ -33,7 +33,7 @@ export async function POST(req: Request) {
     }
 
     const data = await resend.emails.send({
-      from: 'Your App <onboarding@resend.dev>', // or a custom domain
+      from: 'AHSTI Website <no-reply@ahsti.org>', // or a custom domain
       to,
       subject,
       html,
