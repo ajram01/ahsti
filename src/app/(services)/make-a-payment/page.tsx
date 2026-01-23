@@ -95,7 +95,7 @@ export default function MakeAPayment() {
           Contact Us
         </h2>
         {/* servicing@ahsti.org */}
-        <ContactSection email="spruneda134@gmail.com" />
+        <ContactSection email="servicing@ahsti.org" />
       </div>
 
       {/* Carousel Section */}
