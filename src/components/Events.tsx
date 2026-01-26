@@ -87,42 +87,48 @@ export default async function Events() {
 
         <TabsContent value="upcoming">
           <div className="flex flex-col lg:flex-row gap-3 mt-5 mb-3">
-            {upcomingEvents.map((event) => {
-              if (!event.sessions?.length) return null;
+            {upcomingEvents.length > 0 ? (
+              upcomingEvents.map((event) => {
+                if (!event.sessions?.length) return null;
 
-              const session = getNextSession(event.sessions);
-              const sessionDate = new Date(session.date);
+                const session = getNextSession(event.sessions);
+                const sessionDate = new Date(session.date);
 
-              const day = sessionDate.getDate();
-              const month = sessionDate.toLocaleString("en-US", {
-                month: "short",
-              });
+                const day = sessionDate.getDate();
+                const month = sessionDate.toLocaleString("en-US", {
+                  month: "short",
+                });
 
-              const time =
-                session.startTime && session.endTime
-                  ? `${session.startTime} – ${session.endTime}`
-                  : "";
+                const time =
+                  session.startTime && session.endTime
+                    ? `${session.startTime} – ${session.endTime}`
+                    : "";
 
-              const location = session.venue?.address ?? "Location TBA";
+                const location = session.venue?.address ?? "Location TBA";
 
-              return (
-                <Event
-                  key={event._id}
-                  name={event.title}
-                  description={event.excerpt}
-                  month={month}
-                  day={day}
-                  time={time}
-                  location={location}
-                  slug={event.slug.current}
-                />
-              );
-            })}
+                return (
+                  <Event
+                    key={event._id}
+                    name={event.title}
+                    description={event.excerpt}
+                    month={month}
+                    day={day}
+                    time={time}
+                    location={location}
+                    slug={event.slug.current}
+                  />
+                );
+              })
+            ) : (
+              <div className="flex mt-10 mb-10">
+                <h4 className="text-center text-white">There are no upcoming events right now, but we’re always planning what’s next. Check back soon!</h4>
+              </div>
+            )}
           </div>
         </TabsContent>
 
         <TabsContent value="previous">
-          <div>
+          <div className="flex flex-col lg:flex-row gap-3 mt-5 mb-3">
             {pastEvents.map((event) => {
               if (!event.sessions?.length) return null;
 
@@ -158,7 +164,15 @@ export default async function Events() {
         </TabsContent>
       </Tabs>
       <div>
-        <Link href="/events"><Button className="w-[160px] lg:w-[200px] py-6 mt-5" size="lg" variant="secondary">View All Events</Button></Link>
+        <Link href="/events">
+          <Button
+            className="w-[160px] lg:w-[200px] py-6 mt-5"
+            size="lg"
+            variant="secondary"
+          >
+            View All Events
+          </Button>
+        </Link>
       </div>
     </div>
   );
