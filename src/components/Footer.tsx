@@ -41,10 +41,10 @@ export default function Footer() {
   return (
     <div className="bg-gradient-to-r from-primary to-secondary">
       <div className="max-w-[1140px] w-full pt-12 pb-6 px-6 mx-auto text-white">
-        
+
         {/* Main Footer Content */}
         <div className="flex flex-col lg:flex-row lg:justify-between gap-10">
-          
+
           {/* Column 1: Logo & Social */}
           <div className="flex flex-col items-center lg:items-start lg:w-1/5">
             <Link href={"/"}>
@@ -53,21 +53,18 @@ export default function Footer() {
                 alt="Affordable Homes of South Texas Logo"
                 width={200}
                 height={100}
-                className="w-[180px] lg:w-full h-auto mb-6"
+                className="w-[180px] lg:w-full h-auto mb-2"
               />
             </Link>
-            <div className="flex flex-row gap-4 mx-auto lg:mx-0">
-              {socials.map((item, i) => (
-                <a key={i} href={item.link} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                  <Image src={item.image} alt={item.alt} width={20} height={20} />
-                </a>
-              ))}
-            </div>
+            <p className="small-text italic text-center md:text-left">
+              “Inspired every day by the spirit and leadership of Robert ‘Bobby’ Calvillo (1963-2025)”
+            </p>
+
           </div>
 
           {/* Links Sections */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row lg:flex-1 lg:justify-between gap-8">
-            
+
             {/* Quick Links */}
             <div className="flex flex-col">
               <h5 className="mb-4 uppercase tracking-wider">Quick Links</h5>
@@ -105,14 +102,22 @@ export default function Footer() {
             </div>
 
             {/* Contact Info - Fixed alignment by removing col-span-2 */}
-            <div className="flex flex-col gap-4"> 
+            <div className="flex flex-col gap-4">
               <h5 className="uppercase tracking-wider">Contact Us</h5>
               <div className="flex flex-col gap-2">
                 <p className="text-xs">Homeownership Center</p>
                 <a href="tel:956-687-6263" className="hover:underline">Ph: 956-687-6263</a>
-                <a href="https://maps.google.com" className="hover:underline">
+                <a href="fax:956-682-9751" className="hover:underline">Fax: 956-682-9751</a>
+                <a href="https://maps.app.goo.gl/N4qRRCLVUMmRn7DV8" className="hover:underline">
                   500 S. 15th St. McAllen, TX <br /> NMLS# 346848
                 </a>
+              </div>
+              <div className="flex flex-row gap-4 ml-0">
+                {socials.map((item, i) => (
+                  <a key={i} href={item.link} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                    <Image src={item.image} alt={item.alt} width={20} height={20} />
+                  </a>
+                ))}
               </div>
             </div>
 
@@ -121,14 +126,16 @@ export default function Footer() {
 
         {/* Tribute Section */}
         <div className="mt-6 pt-5 text-center">
-          <p className="text-xs sm:text-sm italic opacity-80">
-            “Inspired every day by the spirit and leadership of Robert ‘Bobby’ Calvillo (1963-2025)”
+          <p className="small-text pb-6">
+            Any person with concerns regarding the organization's practices and/or the conduct of its' employees may report their concerns on a confidential and anonymous basis by either emailing concerns@ahsti.org or by calling the Hotline 956-322-3330.
           </p>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t-2 border-white mt-6 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4  uppercase tracking-widest">
-          <p>© 2024 Affordable Homes of South Texas, Inc.</p>
+          <Link href="/">
+            © 2024 Affordable Homes of South Texas, Inc.
+          </Link>
           <Link href="https://rgvisionmedia.com/" className="hover:underline">
             Made X RGVision Media
           </Link>

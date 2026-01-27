@@ -10,11 +10,14 @@ const navItems = [
   { name: "About", link: "/about" },
   { name: "Subdivisions", link: "/subdivisions" },
   { name: "Invest in AHSTI", link: "/invest-in-ahsti" },
-  { name: "Notices", 
+  {
+    name: "Notices",
     children: [
       { name: "Public Notices", link: "/publicnotices" },
+      { name: "Consumer Complaint Notice", link: "/notices/mortgage_company_consumer_complaint_notice_website.pdf" },
+      { name: "Online Privacy Notice", link: "/privacynotice" },
       { name: "Civil Rights Notice", link: "/civilrights" },
-      { name: "AHSTI Privacy Notice", link: "/privacynotice" },
+      { name: "AHSTI Privacy Notice", link: "/notices/ahsti_privacy_notice.pdf" },
     ],
   },
   {
@@ -87,7 +90,7 @@ export default function Header() {
     <div>
       {/* Top Bar */}
       <div className="bg-gradient-to-r from-primary to-secondary">
-        <div className="max-w-[1140px] w-full py-2 px-4 mx-auto flex flex-col-reverse sm:flex-row text-white justify-between items-center gap-2 sm:gap-0">
+        <div className="max-w-[1140px] w-full py-2 px-4 mx-auto flex flex-col-reverse sm:flex-row text-white justify-between items-center gap-2 lg:gap-3">
           <div className="flex flex-row gap-3 sm:gap-5 items-center">
             <div className="flex flex-row gap-3 items-center">
               <Image src="/svg/phone-white.svg" alt="phone" width={20} height={20} />
@@ -96,7 +99,7 @@ export default function Header() {
 
             <div className="flex flex-row gap-3 items-center">
               <Image src="/svg/fax-white.svg" alt="fax" width={20} height={20} />
-              <p className="small-text text-left">FAX: 956-687-6263</p>
+              <p className="small-text text-left">FAX: 956-682-9751</p>
             </div>
           </div>
 
