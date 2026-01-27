@@ -127,7 +127,7 @@ export default function Footer() {
         {/* Tribute Section */}
         <div className="mt-6 pt-5 text-center">
           <p className="small-text pb-6">
-            Any person with concerns regarding the organization's practices and/or the conduct of its' employees may report their concerns on a confidential and anonymous basis by either emailing concerns@ahsti.org or by calling the Hotline 956-322-3330.
+            Any person with concerns regarding the organization’s practices and/or the conduct of its’ employees may report their concerns on a confidential and anonymous basis by either emailing concerns@ahsti.org or by calling the Hotline 956-322-3330.
           </p>
         </div>
 
