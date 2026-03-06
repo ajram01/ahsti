@@ -13,6 +13,7 @@ const navItems = [
   {
     name: "Notices",
     children: [
+      { name: "Events", link: "/events"},
       { name: "Public Notices", link: "/publicnotices" },
       { name: "Consumer Complaint Notice", link: "/notices/mortgage_company_consumer_complaint_notice_website.pdf" },
       { name: "Online Privacy Notice", link: "/privacynotice" },
