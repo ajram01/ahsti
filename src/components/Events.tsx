@@ -31,7 +31,7 @@ const PAST_POSTS_QUERY = `*[
   _type == "event" &&
   defined(slug.current) &&
   endDate < now()
-]|order(endDate desc)[0...10]{
+]|order(endDate desc)[0...2]{
   _id,
   title,
   slug,
