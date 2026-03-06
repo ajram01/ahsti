@@ -9,7 +9,7 @@ const UPCOMING_POSTS_QUERY = `*[
   _type == "event" &&
   defined(slug.current) &&
   endDate >= now()
-]|order(startDate asc)[0...10]{
+]|order(startDate asc)[0...2]{
   _id,
   title,
   slug,
