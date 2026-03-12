@@ -20,7 +20,6 @@ export default function About() {
     { name: "Aidee Castro", role: "Vice President/Director of Lending", image: "/team/aidee.png" },
     { name: "Tony Fernandez", role: "Vice President/Construction Director", image: "/team/tony.png" },
     { name: "Janie Vela", role: "Vice President/Director of Homebuyer Development", image: "/team/janie.png" },
-    { name: "Mark Hernandez", role: "Vice President/Director of Administration", image: "/team/mark.png" },
     { name: "Xavier Jimenez", role: "Vice President/Director of Real Estate Services", image: "/team/xavier.png" }
   ];
 
