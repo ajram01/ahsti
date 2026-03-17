@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
   const notices = [
+    { name: "March 2026 Board Agenda", href: "/notices/board-meetings/Board Meeting Agenda_Mar2026_posting.pdf"},
     { name: "February 2026 Board Agenda", href: "/notices/board-meetings/Board-Meeting-Agenda-February-2026-post.pdf" },
   ];
 
