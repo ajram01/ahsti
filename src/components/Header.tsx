@@ -29,6 +29,7 @@ const navItems = [
       { name: "Make A Payment", link: "/make-a-payment" },
     ],
   },
+  { name: "Careers", link: "/careers" },
 ];
 
 
@@ -131,7 +132,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex w-4/5 justify-between items-center">
+          <div className="hidden lg:flex w-4/5 justify-between items-center gap-1">
             {navItems.map((item, i) => (
               <div key={i} className="relative group">
                 {!item.children ? (
@@ -146,7 +147,7 @@ export default function Header() {
                   )
                 ) : (
                   <>
-                    <h5 className="hover:text-primary transition cursor-pointer flex items-center gap-1">
+                    <h5 className="hover:text-primary transition cursor-pointer flex items-center text-center gap-1">
                       {item.name}
                       <ChevronDown
                         size={16}
@@ -167,8 +168,8 @@ export default function Header() {
               </div>
             ))}
 
-            <Link href="/contact" className="w-[200px]">
-              <Button className="lg:w-[200px] py-6" size="lg">
+            <Link href="/contact" className="w-[140px]">
+              <Button className="lg:w-[140px] py-6" size="lg">
                 Contact Us
               </Button>
             </Link>
@@ -176,7 +177,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden flex flex-col justify-center items-center gap-1"
+            className="lg:hidden flex flex-col justify-center items-center gap-1"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -188,7 +189,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="flex flex-col md:hidden bg-white border-t border-gray-200 px-4 pb-4">
+          <div className="flex flex-col lg:hidden bg-white border-t border-gray-200 px-4 pb-4">
 
             <Link
               href="/"
