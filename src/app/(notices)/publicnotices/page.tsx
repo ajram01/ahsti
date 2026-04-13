@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
   const notices = [
+    { name: "April 2026 Board Agenda", href: "/notices/board-meetings/Board-Meeting-Agenda-April-2026-post.pdf" },
     { name: "March 2026 Board Agenda", href: "/notices/board-meetings/Board Meeting Agenda_Mar2026_posting.pdf"},
     { name: "February 2026 Board Agenda", href: "/notices/board-meetings/Board-Meeting-Agenda-February-2026-post.pdf" },
   ];
@@ -35,7 +36,7 @@ export default function PublicNotices() {
               
             <Link href={notice.href} target="_blank" className="w-full">
               <Button className="lg:w-full py-6" size="lg">
-                View Notice
+                View Agenda
               </Button>
             </Link>
             </div>
