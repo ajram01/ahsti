@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Providers from "./Providers";
+import Script from "next/script";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "logos/social-preview.png", // Must be an absolute URL in production
+        url: "logos/social-preview.png",
         alt: "Affordable Homes of South Texas",
       },
     ],
@@ -49,6 +50,21 @@ export default function RootLayout({
           {children}
           <Footer />
         </Providers>
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZMJYVSZC4P"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-ZMJYVSZC4P');
+          `}
+        </Script>
       </body>
     </html>
   );
