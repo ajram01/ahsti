@@ -3,6 +3,7 @@ import { Poppins, Merriweather } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import CookieNotice from "@/components/CookieNotice";
 import Providers from "./Providers";
 import Script from "next/script";
 
@@ -49,11 +50,13 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <CookieNotice />
         </Providers>
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-ZMJYVSZC4P"
           strategy="afterInteractive"
+          id="google-analytics-script"
         />
 
         <Script id="google-analytics" strategy="afterInteractive">
@@ -62,7 +65,26 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-ZMJYVSZC4P');
+            const consent = window.localStorage.getItem('ahsti-cookie-consent');
+            const analyticsAllowed = consent === 'accepted';
+
+            gtag('config', 'G-ZMJYVSZC4P', {
+              anonymize_ip: true,
+              send_page_view: analyticsAllowed,
+            });
+
+            window.addEventListener('cookie-consent-changed', () => {
+              const updatedConsent = window.localStorage.getItem('ahsti-cookie-consent');
+              if (updatedConsent === 'accepted') {
+                gtag('consent', 'update', {
+                  analytics_storage: 'granted'
+                });
+              } else {
+                gtag('consent', 'update', {
+                  analytics_storage: 'denied'
+                });
+              }
+            });
           `}
         </Script>
       </body>
