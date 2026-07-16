@@ -6,7 +6,6 @@ export default function Footer() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Subdivisions", href: "/subdivisions" },
-    { name: "Invest in AHSTI", href: "/invest-in-ahsti" },
     { name: "Buy A Home", href: "/buy-a-home" },
     { name: "Repair My Home", href: "/repair-my-home" },
     { name: "Make a Payment", href: "/make-a-payment" },
