@@ -7,9 +7,9 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 const navItems = [
+  { name: "Home", link: "/" },
   { name: "About", link: "/about" },
   { name: "Subdivisions", link: "/subdivisions" },
-  { name: "Invest in AHSTI", link: "/invest-in-ahsti" },
   {
     name: "Notices",
     children: [
@@ -132,7 +132,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex w-4/5 justify-between items-center gap-1">
+          <div className="hidden lg:flex w-4/5 justify-end items-center gap-5">
             {navItems.map((item, i) => (
               <div key={i} className="relative group">
                 {!item.children ? (
