@@ -33,8 +33,7 @@ export default function About() {
     { name: "Piedad Martinez", role: "Board Member" },
     { name: "Gilbert Garza Jr.", role: "Board Member" },
     { name: "Rafael Mungia", role: "Board Member" },
-    { name: "Rosie Ovalle", role: "Board Member" },
-    { name: "Eliodora (Loli) Flores", role: "Board Member" }
+    { name: "Matt Jones", role: "Board Member" },
   ];
 
 
@@ -140,7 +139,7 @@ export default function About() {
             {board.map((item, index) => (
               <div
                 key={index}
-                className="bg-blue-50 w-44 h-44 gap-2 flex items-center justify-center rounded-lg shadow-md p-5 transform hover:translate-y-[-5px] transition-all hover:shadow-lg flex-col"
+                className="bg-blue-50 w-46 h-44 gap-2 flex items-center justify-center rounded-lg shadow-md p-5 transform hover:translate-y-[-5px] transition-all hover:shadow-lg flex-col"
               >
                 <p><strong>{item.name}</strong></p>
                 <p className="small-text">{item.role}</p>
@@ -156,7 +155,7 @@ export default function About() {
             {advisory.map((item, index) => (
               <div
                 key={index}
-                className="bg-blue-50 w-44 h-44 gap-2 flex items-center justify-center rounded-lg shadow-md p-5  transform hover:translate-y-[-5px] transition-all hover:shadow-lg"
+                className="bg-blue-50 w-46 h-44 gap-2 flex items-center justify-center rounded-lg shadow-md p-5  transform hover:translate-y-[-5px] transition-all hover:shadow-lg"
               >
                 <p><strong>{item.name}</strong></p>
               </div>
