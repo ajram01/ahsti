@@ -8,7 +8,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const items = [
-  { location: "ALAMO, TX", logo: "/subdivisions/white/crockett-estates.png", backgroundImage: "/subdivisions/crockett-estates.png", file: "/files/crockett-estates.pdf" },
   { location: "MERCEDES, TX", logo: "/subdivisions/white/crown-haven.png", backgroundImage: "/subdivisions/crown-haven.png", file: "/files/crown-haven.pdf" },
   { location: "EDINBURG, TX", logo: "/subdivisions/white/jaguar-heights.png", backgroundImage: "/subdivisions/speedy-trails.png", file: "/files/jaguar-heights.pdf" },
   { location: "WESLACO, TX", logo: "/subdivisions/white/mid-valley-estates.png", backgroundImage: "/subdivisions/mid-valley-estates.png", file: "/files/mid-valley-estates.pdf" },

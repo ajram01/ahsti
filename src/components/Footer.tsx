@@ -14,7 +14,6 @@ export default function Footer() {
   ];
 
   const subdivisions = [
-    { name: "Crockett Estates", file: "/files/crockett-estates.pdf" },
     { name: "Crown Haven", file: "/files/crown-haven.pdf" },
     { name: "Jaguar Heights", file: "/files/jaguar-heights.pdf" },
     { name: "Mid Valley Estates", file: "/files/mid-valley-estates.pdf" },
