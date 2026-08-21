@@ -7,7 +7,6 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 const navItems = [
-  { name: "Home", link: "/" },
   { name: "About", link: "/about" },
   { name: "Subdivisions", link: "/subdivisions" },
   {
@@ -30,6 +29,7 @@ const navItems = [
     ],
   },
   { name: "Careers", link: "/careers" },
+  { name: "Cosmic Glow 5K", link: "https://runsignup.com/Race/TX/Mcallen/CosmicGlow5KRunWalk" },
 ];
 
 
@@ -122,11 +122,11 @@ export default function Header() {
           <div className="flex w-auto sm:w-1/5">
             <Link href="/">
               <Image
-                src="/svg-logos/logo.png"
+                src="/logos/logo-50.png"
                 alt="Affordable Homes of South Texas Logo"
-                width={500}
-                height={500}
-                className="h-auto w-[160px] sm:w-[200px] md:w-[300px]"
+                width={1438}
+                height={795}
+                className="h-auto w-[180px] sm:w-[200px] md:w-[180px]"
               />
             </Link>
           </div>

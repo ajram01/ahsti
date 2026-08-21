@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Providers from "./Providers";
 import Script from "next/script";
+import EventPopups from "@/components/EventPopups";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -49,6 +50,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <EventPopups />
         </Providers>
 
         <Script
