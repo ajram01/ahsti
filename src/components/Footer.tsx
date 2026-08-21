@@ -49,7 +49,7 @@ export default function Footer() {
           <div className="flex flex-col items-center lg:items-start lg:w-1/5">
             <Link href={"/"}>
               <Image
-                src="/svg-logos/logo2-white.png"
+                src="/logos/logo-50-white.png"
                 alt="Affordable Homes of South Texas Logo"
                 width={200}
                 height={100}

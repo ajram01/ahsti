@@ -122,11 +122,11 @@ export default function Header() {
           <div className="flex w-auto sm:w-1/5">
             <Link href="/">
               <Image
-                src="/svg-logos/logo.png"
+                src="/logos/logo-50.png"
                 alt="Affordable Homes of South Texas Logo"
-                width={500}
-                height={500}
-                className="h-auto w-[160px] sm:w-[200px] md:w-[300px]"
+                width={1438}
+                height={795}
+                className="h-auto w-[180px] sm:w-[200px] md:w-[180px]"
               />
             </Link>
           </div>
