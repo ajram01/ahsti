@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 
 const fiveKUrl = "https://runsignup.com/Race/TX/Mcallen/CosmicGlow5KRunWalk";
-const flyerUrl = "/files/homeownership-event-flyer.png";
+const flyerUrl = "/files/popups/AHSTI-McAllen-Mondays.png";
 const flyerDismissedKey = "ahsti-homeownership-event-flyer-dismissed";
 
 export default function EventPopups() {
@@ -29,7 +29,7 @@ export default function EventPopups() {
             type="button"
             onClick={() => setShowFiveK(false)}
             aria-label="Close Cosmic Glow 5K announcement"
-            className="absolute right-2 top-2 rounded-full p-1 text-slate-500 hover:bg-slate-100 hover:text-slate-900"
+            className="absolute right-2 top-2 rounded-full p-1 text-slate-500 hover:bg-slate-100 hover:text-slate-900 hover:cursor-pointer"
           >
             <X size={18} />
           </button>
@@ -63,7 +63,7 @@ export default function EventPopups() {
               type="button"
               onClick={closeFlyer}
               aria-label="Close Homeownership Event flyer"
-              className="absolute right-3 top-3 z-10 rounded-full bg-white/95 p-2 text-slate-700 shadow-md hover:bg-white"
+              className="absolute right-3 top-3 z-10 rounded-full bg-white/95 p-2 text-slate-700 shadow-md hover:bg-white hover:cursor-pointer"
             >
               <X size={22} />
             </button>
